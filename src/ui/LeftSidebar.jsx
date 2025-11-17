@@ -32,8 +32,7 @@ function LeftSidebar() {
       ${currentMobileSidebar !== "left" && "max-phone-lg:translate-x-[-105%]"}
       ${currentMobileSidebar === "left" && "translate-0"}`}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      inert={currentMobileSidebar !== "left"}>
+      onMouseLeave={handleMouseLeave}>
       <HeaderLeftSidebar leftSidebarExpanded={leftSidebarExpanded} />
       <ProjectActions leftSidebarExpanded={leftSidebarExpanded} />
       <ProjectsList leftSidebarExpanded={leftSidebarExpanded} />

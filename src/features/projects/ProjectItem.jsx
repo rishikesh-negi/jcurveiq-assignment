@@ -32,7 +32,7 @@ function ProjectItem({ project }) {
     <li
       onClick={handleOpenProject}
       onKeyDown={handleKeyboardTrigger}
-      className={`w-full px-8 py-4 flex flex-col gap-3 hover:bg-background-4 cursor-pointer transition-all duration-75 focus:outline-none focus-visible:outline-none focus:ring-2 focus:ring-inset focus:ring-accent-100 ${openProjectItemStyle}
+      className={`w-full px-8 py-4 flex flex-col gap-3 hover:bg-background-4 cursor-pointer transition-all duration-75 focus:outline-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent-100 ${openProjectItemStyle}
       max-phone-lg:gap-5 max-phone-lg:px-16 max-phone-lg:py-8 max-phone-sm:px-12`}
       tabIndex="0"
       role="button">
