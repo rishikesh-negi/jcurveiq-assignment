@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "MessinaSans";
+  src: url("./assets/fonts/MessinaSans-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@layer theme, base, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer base {
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 431px) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  @media screen and (max-width: 361px) {
+    html {
+      font-size: 43.75%;
+    }
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@theme {
+  --color-background-1: #fff;
+  --color-background-2: #fafbfc;
+  --color-background-3: #f8fafc;
+  --color-background-4: #f3f5f7;
+  --color-border: #ebedef;
+
+  --color-text-primary: #212121;
+  --color-text-secondary: #424242;
+  --color-text-helper: #757575;
+
+  --color-icons: #616161;
+
+  --color-accent-25: #e9ecff;
+  --color-accent-100: #768eff;
+  --color-accent-400: #5073ff;
+
+  --color-tag-1: #a1afff;
+  --color-tag-2: #9082e6;
+
+  --breakpoint-*: initial;
+
+  --breakpoint-phone-lg: 431px;
+  --breakpoint-phone: 391px;
+  --breakpoint-phone-sm: 361px;
+}

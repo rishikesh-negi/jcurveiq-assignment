@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Project 1",
+    "id": 1,
+    "date": 1758389700000,
+    "headline": "Analyze performance and summarize major operational insights based on the data.",
+    "summary": "The project shows improvement in overall efficiency, with moderate declines in certain operational indicators. Key observations include stable growth in output, improved conversion cycle, and strong productivity metrics.",
+    "keyHighlights": [
+      "Output per employee increased steadily over the past two quarters.",
+      "Conversion cycle improved from 25 to 18 days.",
+      "Customer retention rose by 12%.",
+      "Minor delays observed in project delivery timelines.",
+      "Efficiency per resource is trending upward year-over-year."
+    ],
+    "modelUsed": "GPT-4o (Latest)"
+  },
+  {
+    "title": "Project 2",
+    "id": 2,
+    "date": 1758389900000,
+    "headline": "Performance analysis and summary of major operational insights based on the data.",
+    "summary": "The project demonstrates improvement in overall efficiency, with moderate declines in certain operational indicators. Stable growth in output, improved conversion cycle, and strong productivity metrics are some of the key observations.",
+    "keyHighlights": [
+      "Over the past two quarters, output per employee increased steadily.",
+      "Conversion cycle shortened by 7 days.",
+      "Customer retention rate increased by 12%.",
+      "Project delivery timelines experienced minor delays.",
+      "Year-over-year efficiency per resource is trending upward."
+    ],
+    "modelUsed": "GPT-4o (Latest)"
+  }
+]
