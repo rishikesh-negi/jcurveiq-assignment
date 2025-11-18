@@ -22,8 +22,12 @@ function MainContent() {
   });
 
   const openProject = useSelector(selectOpenProject);
+  const { status: projectDataStatus, error } = useSelector(
+    (state) => state.projects
+  );
 
   if (!openProjectId) return <EmptyMainWorkspace />;
+  if (projectDataStatus === "failed") return <Error message={error} />;
 
   let numericHighlight = 0;
 
