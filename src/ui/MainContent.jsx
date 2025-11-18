@@ -5,7 +5,6 @@ import { Document } from "@carbon/icons-react";
 import { formatDateAndTime } from "../helpers/formatDateAndTime";
 
 import HeaderMain from "./HeaderMain";
-import Spinner from "./Spinner";
 import EmptyMainWorkspace from "./EmptyMainWorkspace";
 import SquareButtons from "./SquareButtons";
 import QuestionForm from "./QuestionForm";
