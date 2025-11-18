@@ -11,7 +11,7 @@ function HeaderLeftSidebar({ leftSidebarExpanded }) {
 
   return (
     <header
-      className={`flex items-center justify-between ${leftSidebarExpanded ? "px-8" : "px-2 justify-center"} py-10 max-phone-lg:px-16 max-phone-lg:py-12 max-phone-sm:px-12`}>
+      className={`flex items-center justify-between ${leftSidebarExpanded ? "px-8" : "px-2 justify-center"} py-10 max-phone-lg:px-16 max-phone-lg:py-12 max-phone-sm:px-8`}>
       <div className="flex items-center gap-3 z-10">
         <img
           src="logo.png"

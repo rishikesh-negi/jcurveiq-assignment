@@ -34,8 +34,8 @@ function MainContent() {
   return (
     <>
       <HeaderMain project={openProject} />
-      <main className="row-start-2 row-span-1 col-start-2 col-span-1 w-290 self-stretch mt-10 mx-auto flex flex-col gap-10 max-phone-lg:w-screen max-phone-lg:px-14 max-phone-lg:mt-12 overflow-hidden max-phone-sm:px-10">
-        <div className="flex flex-col gap-10 overflow-y-scroll no-scrollbar max-phone-lg:gap-12">
+      <main className="row-start-2 row-span-1 col-start-2 col-span-1 w-290 self-stretch overflow-hidden mt-10 mx-auto flex flex-col gap-10 max-phone-lg:w-screen max-phone-lg:px-14 max-phone-lg:mt-12 max-phone-sm:px-10">
+        <div className="flex flex-col gap-10 overflow-y-scroll no-scrollbar max-phone-lg:gap-12 max-phone-sm:gap-10">
           <h4 className="text-3xl text-text-primary font-semibold tracking-wide max-phone-lg:text-4xl">
             {openProject.headline}
           </h4>

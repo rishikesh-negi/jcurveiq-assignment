@@ -9,7 +9,7 @@ function UserActions({ leftSidebarExpanded }) {
 
   return (
     <div
-      className={`px-8 py-6 flex items-center ${flexStyle} border-t border-border transition-all duration-200 max-phone-lg:px-16 max-phone-lg:py-12 max-phone-sm:px-12`}>
+      className={`px-8 py-6 flex items-center ${flexStyle} border-t border-border transition-all duration-200 max-phone-lg:px-16 max-phone-lg:py-12 max-phone-sm:px-8`}>
       <ButtonIcon
         icon={
           <UserAvatar
