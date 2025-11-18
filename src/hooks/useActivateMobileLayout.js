@@ -4,15 +4,16 @@ import { activateMobileLayout, deactivateMobileLayout } from "../ui/uiSlice";
 
 export function useActivateMobileLayout() {
   const dispatch = useDispatch();
+  const viewportWidth = window.innerWidth;
 
   useEffect(
     function () {
-      if (window.innerWidth <= 430) {
+      if (viewportWidth <= 430) {
         dispatch(activateMobileLayout());
       } else {
         dispatch(deactivateMobileLayout());
       }
     },
-    [dispatch]
+    [dispatch, viewportWidth]
   );
 }
