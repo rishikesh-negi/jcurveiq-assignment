@@ -32,7 +32,6 @@ const projectsSlice = createSlice({
         state.status = state.projects.length ? "success" : "empty";
       })
       .addCase(getProjects.rejected, (state, action) => {
-        console.log(action);
         state.status = "failed";
         state.error = action.error.message;
       });
