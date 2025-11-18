@@ -42,6 +42,12 @@ function HeaderLeftSidebar({ leftSidebarExpanded }) {
           }
           onClick={closeCollapseSidebar}
           additionalStyles={`transition-all duration-200 ${!leftSidebarExpanded && "absolute -translate-x-200"}`}
+          ariaLabel={
+            currentMobileSidebar === "left" ? "Close sidebar" : "Collapse panel"
+          }
+          title={
+            currentMobileSidebar === "left" ? "Close sidebar" : "Collapse panel"
+          }
         />
       )}
     </header>

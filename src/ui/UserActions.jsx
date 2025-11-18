@@ -17,7 +17,8 @@ function UserActions({ leftSidebarExpanded }) {
             fill="var(--color-icons)"
             className="max-phone-lg:scale-125"
           />
-        }>
+        }
+        ariaLabel="Open user profile">
         <SlidingButtonLabel label="User Profile" />
       </ButtonIcon>
 
@@ -29,6 +30,8 @@ function UserActions({ leftSidebarExpanded }) {
             className="max-phone-lg:scale-120"
           />
         }
+        ariaLabel="Open settings"
+        title="Settings"
       />
     </div>
   );

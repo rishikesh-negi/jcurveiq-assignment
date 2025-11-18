@@ -3,7 +3,7 @@ import ButtonIcon from "./ButtonIcon";
 import { Search } from "@carbon/icons-react";
 import SquareButtons from "./SquareButtons";
 
-function SearchBar() {
+function SearchBar({ required = false }) {
   const [searchQuery, setSearchQuery] = useState("");
 
   return (
@@ -14,6 +14,8 @@ function SearchBar() {
           placeholder="Search"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          required
+          aria-required={required}
           className="text-2xl w-full h-full rounded-xs placeholder:text-[#a8a8a8] focus:outline-none focus:ring focus:ring-accent-100 focus:ring-offset-14 max-phone-lg:text-4xl"
         />
         <SquareButtons
@@ -25,6 +27,8 @@ function SearchBar() {
             />
           }
           styles="p-2 bg-tag-1 rounded-md cursor-pointer max-phone-lg:p-3.5"
+          ariaLabel="Search"
+          title="Search"
         />
       </div>
     </form>

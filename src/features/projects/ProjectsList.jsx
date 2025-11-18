@@ -26,7 +26,11 @@ function ProjectsList({ leftSidebarExpanded }) {
 
           <ul className="w-full flex flex-col gap-1 overflow-y-scroll no-scrollbar">
             {projects.map((project) => (
-              <ProjectItem project={project} key={project.headline} />
+              <ProjectItem
+                project={project}
+                key={project.headline}
+                ariaLabel={`Open project ${project.id}`}
+              />
             ))}
           </ul>
         </div>

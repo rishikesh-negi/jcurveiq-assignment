@@ -13,7 +13,8 @@ function ProjectActions({ leftSidebarExpanded }) {
             fill="var(--color-icons)"
             className="max-phone-lg:scale-120"
           />
-        }>
+        }
+        ariaLabel="Create new project">
         <SlidingButtonLabel label="New Project" />
       </ButtonIcon>
 
@@ -24,7 +25,8 @@ function ProjectActions({ leftSidebarExpanded }) {
             fill="var(--color-icons)"
             className="max-phone-lg:scale-120"
           />
-        }>
+        }
+        ariaLabel="Search in project content">
         <SlidingButtonLabel label="Search in Project" />
       </ButtonIcon>
 
@@ -35,7 +37,8 @@ function ProjectActions({ leftSidebarExpanded }) {
             fill="var(--color-icons)"
             className="max-phone-lg:scale-120"
           />
-        }>
+        }
+        ariaLabel="View archived projects">
         <SlidingButtonLabel label="Archived Projects" />
       </ButtonIcon>
     </div>

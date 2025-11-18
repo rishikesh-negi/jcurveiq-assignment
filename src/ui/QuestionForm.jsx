@@ -12,12 +12,18 @@ function QuestionForm() {
         <textarea
           type="text"
           placeholder="Ask questions..."
-          className="w-full h-30 outline-none placeholder:text-2xl text-2xl resize-none no-scrollbar max-phone-lg:text-3xl max-phone-lg:placeholder:text-3xl"></textarea>
+          className="w-full h-30 outline-none placeholder:text-2xl text-2xl resize-none no-scrollbar max-phone-lg:text-3xl max-phone-lg:placeholder:text-3xl"
+          required
+          aria-required></textarea>
       </div>
 
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <ButtonIcon icon={<Upload size={18} />} />
+          <ButtonIcon
+            icon={<Upload size={18} />}
+            ariaLabel="Upload a file"
+            title="Upload"
+          />
           <SquareButtons
             icon={<Document size={16} fill="var(--color-accent-400)" />}
             styles="p-2 bg-accent-25 border border-accent-100 rounded-sm cursor-pointer"
@@ -30,6 +36,8 @@ function QuestionForm() {
               id="model-selection"
               value={modelValue}
               onChange={(e) => setModelValue(e.target.value)}
+              required
+              aria-required
               className="p-2 rounded-md border-r-8 border-transparent outline outline-border text-2xl cursor-pointer max-phone-lg:p-3 max-phone-sm:border-r-4">
               <option value="4o-latest">GPT-4o (Latest)</option>
               <option value="3">GPT-3</option>
@@ -39,6 +47,8 @@ function QuestionForm() {
             <SquareButtons
               icon={<SendAlt size={18} fill="var(--color-background-1)" />}
               styles="p-2 bg-tag-1 rounded-md cursor-pointer"
+              ariaLabel="Ask question"
+              title="Send"
             />
           </div>
         </div>
