@@ -7,10 +7,13 @@ function ProjectsList({ leftSidebarExpanded }) {
     (state) => state.projects
   );
 
+  const { currentMobileSidebar } = useSelector((state) => state.ui);
+
   return (
     <div
       className={`w-full h-full pt-8 flex flex-col gap-6 max-phone-lg:pt-12 overflow-y-hidden`}>
-      {projectsDataStatus === "loading" ? (
+      {projectsDataStatus === "loading" &&
+      (leftSidebarExpanded || currentMobileSidebar === "left") ? (
         <Spinner />
       ) : (
         <div
