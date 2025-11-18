@@ -119,4 +119,8 @@ The project is deployed on Vercel:
 
 To re-deploy, fork the repository to your account and deploy on Netlify or Vercel by importing the project on either platform.
 
-## 📲 Mobile layout:
+## 📸 Mobile layout demo:
+Watch here: https://www.loom.com/share/8a532fc6580445868468a9323cc38eed
+
+## 🖥️ Desktop site demo:
+Watch here: https://www.loom.com/share/6ad0ad4650cd437bb4619cd44475e0c8
