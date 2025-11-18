@@ -5,6 +5,7 @@ const initialState = {
   openProjectId: null,
   sidebarHoverEnabled: true,
   currentMobileSidebar: null,
+  isMobileLayout: false,
 };
 
 const uiSlice = createSlice({
@@ -42,6 +43,14 @@ const uiSlice = createSlice({
       state.leftSidebarExpanded = false;
       state.currentMobileSidebar = null;
     },
+
+    activateMobileLayout(state) {
+      state.isMobileLayout = true;
+    },
+
+    deactivateMobileLayout(state) {
+      state.isMobileLayout = false;
+    },
   },
 });
 
@@ -53,6 +62,8 @@ export const {
   openProject,
   openMobileSidebar,
   closeMobileSidebar,
+  activateMobileLayout,
+  deactivateMobileLayout,
 } = uiSlice.actions;
 
 export default uiSlice.reducer;
