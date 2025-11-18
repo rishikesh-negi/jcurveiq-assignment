@@ -13,6 +13,7 @@ function LeftSidebar() {
     sidebarHoverEnabled,
     openProjectId,
     currentMobileSidebar,
+    isMobileLayout,
   } = useSelector((state) => state.ui);
 
   function handleMouseEnter() {
@@ -32,7 +33,8 @@ function LeftSidebar() {
       ${currentMobileSidebar !== "left" && "max-phone-lg:translate-x-[-105%]"}
       ${currentMobileSidebar === "left" && "translate-0"}`}
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}>
+      onMouseLeave={handleMouseLeave}
+      inert={isMobileLayout && currentMobileSidebar !== "left"}>
       <HeaderLeftSidebar leftSidebarExpanded={leftSidebarExpanded} />
       <ProjectActions leftSidebarExpanded={leftSidebarExpanded} />
       <ProjectsList leftSidebarExpanded={leftSidebarExpanded} />
