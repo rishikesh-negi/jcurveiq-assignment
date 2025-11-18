@@ -1,5 +1,9 @@
-function SquareButtons({ icon, styles }) {
-  return <button className={styles}>{icon}</button>;
+function SquareButtons({ icon, styles, ariaLabel = "", title }) {
+  return (
+    <button className={styles} aria-label={ariaLabel} title={title}>
+      {icon}
+    </button>
+  );
 }
 
 export default SquareButtons;
