@@ -34,7 +34,8 @@ function LeftSidebar() {
       ${currentMobileSidebar === "left" && "translate-0"}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      inert={isMobileLayout && currentMobileSidebar !== "left"}>
+      inert={isMobileLayout && currentMobileSidebar !== "left"}
+      aria-hidden={isMobileLayout && currentMobileSidebar !== "left"}>
       <HeaderLeftSidebar leftSidebarExpanded={leftSidebarExpanded} />
       <ProjectActions leftSidebarExpanded={leftSidebarExpanded} />
       <ProjectsList leftSidebarExpanded={leftSidebarExpanded} />
