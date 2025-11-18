@@ -42,10 +42,10 @@ function MainContent() {
 
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="text-text-helper text-lg max-phone-lg:text-xl">
+              <span className="text-text-helper text-lg max-phone-lg:text-2xl">
                 Answered with:
               </span>
-              <span className="text-lg px-4 py-2 rounded-md border border-border max-phone-lg:text-xl max-phone-lg:py-2.5">
+              <span className="text-lg px-4 py-2 rounded-md border border-border max-phone-lg:text-2xl">
                 {openProject.modelUsed}
               </span>
               <SquareButtons
