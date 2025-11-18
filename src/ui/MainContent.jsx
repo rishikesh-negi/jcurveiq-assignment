@@ -62,7 +62,7 @@ function MainContent() {
             <h4 className="text-2xl font-semibold max-phone-lg:text-3xl">
               Summary
             </h4>
-            <p className="text-xl tracking-wider max-phone-lg:text-2xl">
+            <p className="text-xl tracking-wider max-phone-lg:text-2xl max-phone-lg:tracking-normal">
               {openProject.summary}
             </p>
           </div>
