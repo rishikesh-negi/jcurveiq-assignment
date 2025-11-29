@@ -1,5 +1,6 @@
 # JCurveIQ Screening Assignment App
-Live demo: https://jcurveiq-assignment-teal.vercel.app
+Figma Design: https://www.figma.com/design/IVSFgUPlE4lNGxLNyBsXYQ/FE-developer-assignment?node-id=0-1&p=f&t=CVQpNyxChGgSvzL7-0
+Live Demo: https://jcurveiq-assignment-teal.vercel.app
 
 This project implements the JCurveIQ assignment using React, Redux Toolkit, TailwindCSS, and Vite. It includes a sidebar with project actions, filtering, state transitions, and mock API support.
 
